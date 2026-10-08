@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Portal | Johntech Vendors LTD</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo-gear.svg">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <!-- 1. LOGIN SCREEN -->
+  <div class="login-screen" id="loginScreen">
+    <div class="login-card">
+      <img src="assets/logo.svg" alt="Johntech Vendors LTD" class="login-logo">
+      <h2 class="login-title">Admin Management Portal</h2>
+      <p class="login-desc">Sign in to update machine prices, publish blog articles, modify contact information, and upload photos.</p>
+      
+      <form id="loginForm">
+        <div class="form-group-admin" style="text-align: left;">
+          <label class="form-label-admin" for="loginUser">Admin Email Address</label>
+          <input type="email" id="loginUser" class="form-input-admin" placeholder="johntechvendorssolutions@gmal.com" required>
+        </div>
+        <div class="form-group-admin" style="text-align: left;">
+          <label class="form-label-admin" for="loginPass">Password</label>
+          <input type="password" id="loginPass" class="form-input-admin" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="btn-admin-primary" style="width: 100%; justify-content: center; padding: 12px;">
+          Access Admin Dashboard &rarr;
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. ADMIN DASHBOARD LAYOUT -->
+  <div class="admin-layout" id="adminLayout">
+    
+    <!-- Sidebar -->
+    <aside class="admin-sidebar">
+      <div class="sidebar-header">
+        <img src="assets/logo-white.svg" alt="Johntech Logo" class="sidebar-brand-img">
+        <div>
+          <span class="sidebar-badge">Control Center</span>
+        </div>
+      </div>
+
+      <ul class="sidebar-nav">
+        <li>
+          <button class="nav-item-btn active" data-view="view-dashboard">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            <span>Dashboard</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-item-btn" data-view="view-products">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            <span>Products &amp; Prices</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-item-btn" data-view="view-blogs">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+            <span>Blog Articles</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-item-btn" data-view="view-media">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+            <span>Media &amp; Images</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-item-btn" data-view="view-settings">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            <span>Website Settings</span>
+          </button>
+        </li>
+        <li>
+          <button class="nav-item-btn" data-view="view-backup">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Backup &amp; Reset</span>
+          </button>
+        </li>
+      </ul>
+
+      <div class="sidebar-footer">
+        <a href="index.html" target="_blank" class="btn-sidebar-ext">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          <span>View Live Site</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="admin-main">
+      <header class="admin-topbar">
+        <h2 class="topbar-title" id="topbarTitle">Dashboard</h2>
+        <div class="topbar-right">
+          <div class="admin-user-pill">
+            <div class="admin-avatar">AD</div>
+            <span>Johntech Admin</span>
+          </div>
+          <button class="btn-logout" id="btnLogout">Sign Out</button>
+        </div>
+      </header>
+
+      <main class="admin-content">
+        
+        <!-- VIEW 1: DASHBOARD -->
+        <div class="admin-view active" id="view-dashboard">
+          <div class="kpi-grid">
+            <div class="kpi-card">
+              <div class="kpi-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              </div>
+              <div>
+                <div class="kpi-val" id="kpiTotalProducts">27</div>
+                <div class="kpi-label">Active Machines &amp; Products</div>
+              </div>
+            </div>
+
+            <div class="kpi-card">
+              <div class="kpi-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+              </div>
+              <div>
+                <div class="kpi-val" id="kpiTotalBlogs">3</div>
+                <div class="kpi-label">Published Blog Articles</div>
+              </div>
+            </div>
+
+            <div class="kpi-card">
+              <div class="kpi-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <div>
+                <div class="kpi-val" id="kpiFeaturedProducts">5</div>
+                <div class="kpi-label">Featured Homepage Machines</div>
+              </div>
+            </div>
+
+            <div class="kpi-card">
+              <div class="kpi-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <div class="kpi-val" style="font-size: 1.125rem;" id="kpiContactPhone">+254 790 825 018</div>
+                <div class="kpi-label">Main Business Contact</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-card">
+            <div class="panel-header">
+              <div>
+                <h3 class="panel-title">Quick Administration Actions</h3>
+                <p style="font-size:0.8125rem; color:#64748B;">Modify prices in seconds, add new machines, or publish articles.</p>
+              </div>
+              <div class="panel-actions">
+                <button class="btn-admin-primary" onclick="document.querySelector('.nav-item-btn[data-view=\'view-products\']').click()">
+                  Manage All Products &amp; Prices &rarr;
+                </button>
+                <button class="btn-admin-secondary" onclick="document.querySelector('.nav-item-btn[data-view=\'view-blogs\']').click()">
+                  Write New Blog Article &rarr;
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIEW 2: PRODUCTS & PRICES -->
+        <div class="admin-view" id="view-products">
+          <div class="panel-card">
+            <div class="panel-header">
+              <div>
+                <h3 class="panel-title">Machine Catalog &amp; Live Price Editor</h3>
+                <p style="font-size:0.8125rem; color:#64748B;">Click in any price box to edit and click the checkmark to save instantly!</p>
+              </div>
+              <div class="panel-actions">
+                <div class="search-box-admin">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                  <input type="text" id="adminProductSearch" placeholder="Search machines...">
+                </div>
+                <button class="btn-admin-primary" id="btnNewProduct">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  <span>Add New Machine</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="admin-table-wrapper">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Photo</th>
+                    <th>Product Name &amp; Model</th>
+                    <th>Category</th>
+                    <th>Price (KSh)</th>
+                    <th>Badge</th>
+                    <th>Featured</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="adminProductsTableBody">
+                  <!-- Populated by js/admin.js -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIEW 3: BLOGS -->
+        <div class="admin-view" id="view-blogs">
+          <div class="panel-card">
+            <div class="panel-header">
+              <div>
+                <h3 class="panel-title">Company Knowledge &amp; Blog Articles</h3>
+                <p style="font-size:0.8125rem; color:#64748B;">Educate customers on water vending, salad ATM business, and equipment selection.</p>
+              </div>
+              <button class="btn-admin-primary" id="btnNewBlog">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                <span>Write New Article</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="blogs-admin-grid" id="adminBlogsGrid">
+            <!-- Populated by js/admin.js -->
+          </div>
+        </div>
+
+        <!-- VIEW 4: MEDIA & IMAGES -->
+        <div class="admin-view" id="view-media">
+          <div class="panel-card">
+            <div class="panel-header">
+              <div>
+                <h3 class="panel-title">Media &amp; Equipment Photos Gallery</h3>
+                <p style="font-size:0.8125rem; color:#64748B;">Upload photos from your computer or copy image URLs to use in products and blogs.</p>
+              </div>
+              <div>
+                <label class="btn-admin-primary" style="cursor: pointer;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                  <span>Upload Image From Computer</span>
+                  <input type="file" id="mediaFileInput" accept="image/*" style="display: none;">
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;" id="mediaGalleryGrid">
+            <!-- Populated by js/admin.js -->
+          </div>
+        </div>
+
+        <!-- VIEW 5: WEBSITE SETTINGS -->
+        <div class="admin-view" id="view-settings">
+          <div class="panel-card" style="max-width: 840px;">
+            <div class="panel-header">
+              <div>
+                <h3 class="panel-title">General Website Settings &amp; Contacts</h3>
+                <p style="font-size:0.8125rem; color:#64748B;">Edit company contacts, hero text, and live metrics counter numbers.</p>
+              </div>
+            </div>
+            <div style="padding: 28px;">
+              <form id="settingsForm">
+                
+                <h4 style="font-size:1rem; font-weight:800; color:#0A1C38; margin-bottom:16px;">1. Company Branding &amp; Contacts</h4>
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                  <div class="form-group-admin">
+                    <label class="form-label-admin">Company Name</label>
+                    <input type="text" id="setCompanyName" class="form-input-admin" required>
+                  </div>
+                  <div class="form-group-admin">
+                    <label class="form-label-admin">Motto / Tagline</label>
+                    <input type="text" id="setTagline" class="form-input-admin" required>
+                  </div>
+                </div>
+
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                  <div class="form-group-admin">
+                    <label class="form-label-admin">Phone Display</label>
+                    <input type="text" id="setPhoneDisplay" class="form-input-admin" placeholder="+254 790 825 018" required>
+                  </div>
+                  <div class="form-group-admin">
+                    <label class="form-label-admin">WhatsApp Number (e.g. 254790825018)</label>
+                    <input type="text" id="setWhatsapp" class="form-input-admin" placeholder="254790825018" required>
+                  </div>
+                </div>
+
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                  <div class="form-group-admin">
+                    <label class="form-label-admin">Local Dial Phone (e.g. 0790 825018)</label>
+                    <input type="text" id="setPhone" class="form-input-admin" required>
+                  </div>
+                  <div class="form-group-admin">
+                    <label class="form-label-admin">Primary Sales Email</label>
+                    <input type="email" id="setEmail" class="form-input-admin" required>
+                  </div>
+                </div>
+
+                <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                  <div class="form-group-admin">
+                    <label class="form-label-admin">Alternative Inquiries Email</label>
+                    <input type="email" id="setEmailAlt" class="form-input-admin">
+                  </div>
+                  <div class="form-group-admin">
+                    <label class="form-label-admin">Working Hours</label>
+                    <input type="text" id="setWorkingHours" class="form-input-admin" required>
+                  </div>
+                </div>
+
+                <div class="form-group-admin">
+                  <label class="form-label-admin">Physical Workshop &amp; Office Address</label>
+                  <input type="text" id="setAddress" class="form-input-admin" required>
+                </div>
+
+                <hr style="border:none; border-top:1px solid #E2E8F0; margin: 24px 0;">
+
+                <h4 style="font-size:1rem; font-weight:800; color:#0A1C38; margin-bottom:16px;">2. Hero Banner Copy</h4>
+                <div class="form-group-admin">
+                  <label class="form-label-admin">Category Eyebrow Tag</label>
+                  <input type="text" id="setHeroTag" class="form-input-admin" required>
+                </div>
+                <div class="form-group-admin">
+                  <label class="form-label-admin">Hero Main Headline</label>
+                  <input type="text" id="setHeroTitle" class="form-input-admin" required>
+                </div>
+                <div class="form-group-admin">
+                  <label class="form-label-admin">Hero Description</label>
+                  <textarea id="setHeroSubtitle" class="form-input-admin" rows="3" required></textarea>
+                </div>
+                <div class="form-group-admin">
+                  <label class="form-label-admin">Hero Showcase Image URL</label>
+                  <input type="text" id="setHeroImage" class="form-input-admin" required>
+                </div>
+
+                <hr style="border:none; border-top:1px solid #E2E8F0; margin: 24px 0;">
+
+                <h4 style="font-size:1rem; font-weight:800; color:#0A1C38; margin-bottom:16px;">3. Live Homepage Metrics Numbers</h4>
+                <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+                  <div class="form-group-admin">
+                    <label class="form-label-admin">Installations Completed</label>
+                    <input type="number" id="setStatInstallations" class="form-input-admin" required>
+                  </div>
+                  <div class="form-group-admin">
+                    <label class="form-label-admin">Client Satisfaction (%)</label>
+                    <input type="number" id="setStatSatisfaction" class="form-input-admin" required>
+                  </div>
+                  <div class="form-group-admin">
+                    <label class="form-label-admin">Business Partners</label>
+                    <input type="number" id="setStatPartners" class="form-input-admin" required>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn-admin-primary" style="padding: 14px 28px; font-size: 1rem;">
+                  Save All Website Settings &rarr;
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIEW 6: BACKUP & FACTORY RESET -->
+        <div class="admin-view" id="view-backup">
+          <div class="panel-card" style="max-width: 680px;">
+            <div class="panel-header">
+              <h3 class="panel-title">Database Export &amp; Backup Tools</h3>
+            </div>
+            <div style="padding: 28px; display: flex; flex-direction: column; gap: 24px;">
+              <div>
+                <h4 style="font-size:1rem; font-weight:800; color:#0A1C38; margin-bottom:6px;">Export Full Backup (JSON)</h4>
+                <p style="font-size:0.875rem; color:#64748B; margin-bottom:12px;">Download a complete snapshot of all products, prices, blogs, and configurations to your computer.</p>
+                <button class="btn-admin-primary" id="btnExportData">Download Backup JSON</button>
+              </div>
+              <hr style="border:none; border-top:1px solid #E2E8F0;">
+              <div>
+                <h4 style="font-size:1rem; font-weight:800; color:#0A1C38; margin-bottom:6px;">Restore / Import Backup</h4>
+                <p style="font-size:0.875rem; color:#64748B; margin-bottom:12px;">Upload a previously saved JSON file to restore website contents.</p>
+                <input type="file" id="importDataFile" accept=".json" class="form-input-admin" style="max-width: 320px;">
+              </div>
+              <hr style="border:none; border-top:1px solid #E2E8F0;">
+              <div>
+                <h4 style="font-size:1rem; font-weight:800; color:#B91C1C; margin-bottom:6px;">Reset to Factory Defaults</h4>
+                <p style="font-size:0.875rem; color:#64748B; margin-bottom:12px;">Clear custom edits and restore the original verified catalog and official prices.</p>
+                <button class="btn-admin-secondary" style="border-color:#FCA5A5; color:#B91C1C;" id="btnResetDefaults">Reset Everything to Factory Defaults</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- MODAL: ADD / EDIT PRODUCT -->
+  <div class="admin-modal-overlay" id="productModal">
+    <div class="admin-modal-dialog">
+      <div class="admin-modal-header">
+        <h3 class="admin-modal-title" id="productModalTitle">Add / Edit Machine</h3>
+        <button class="admin-modal-close" id="closeProductModal">&times;</button>
+      </div>
+      <form id="productForm">
+        <div class="form-group-admin">
+          <label class="form-label-admin">Machine Name &amp; Capacity *</label>
+          <input type="text" id="prodName" class="form-input-admin" placeholder="e.g. Reverse Osmosis Machine 500lph" required>
+        </div>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div class="form-group-admin">
+            <label class="form-label-admin">Category *</label>
+            <input type="text" id="prodCategory" class="form-input-admin" placeholder="e.g. Reverse Osmosis, Oil ATM" required>
+          </div>
+          <div class="form-group-admin">
+            <label class="form-label-admin">Solution Type *</label>
+            <select id="prodSolutionType" class="form-input-admin">
+              <option value="Vending & Dispensing">Vending &amp; Dispensing</option>
+              <option value="Commercial Purification">Commercial Purification</option>
+              <option value="Milk Processing">Milk Processing</option>
+              <option value="Accessories">Accessories &amp; Packaging</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div class="form-group-admin">
+            <label class="form-label-admin">Price in KSh (Numeric only) *</label>
+            <input type="number" id="prodPrice" class="form-input-admin" placeholder="e.g. 410000" required>
+          </div>
+          <div class="form-group-admin">
+            <label class="form-label-admin">Highlight Badge (Optional)</label>
+            <input type="text" id="prodBadge" class="form-input-admin" placeholder="e.g. Top Seller, Commercial Hero">
+          </div>
+        </div>
+
+        <div class="form-group-admin">
+          <label class="form-label-admin">Image Selection (URL or File Upload)</label>
+          <input type="text" id="prodImageUrl" class="form-input-admin" placeholder="assets/products/... or https://...">
+          <div class="image-upload-preview-box">
+            <img src="assets/hero-machine.jpg" id="prodImgPreview" class="preview-img-tag" alt="Preview">
+            <div>
+              <label class="btn-admin-secondary" style="padding:6px 14px; font-size:0.75rem; cursor:pointer;">
+                <span>Choose Image File</span>
+                <input type="file" id="prodImgFile" accept="image/*" style="display:none;">
+              </label>
+              <div style="font-size:0.75rem; color:#64748B; margin-top:4px;">JPG, PNG, WebP supported</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group-admin">
+          <label class="form-label-admin" style="display:flex; align-items:center; gap:8px;">
+            <input type="checkbox" id="prodFeatured">
+            <span>Feature prominently on homepage?</span>
+          </label>
+        </div>
+
+        <div class="form-group-admin">
+          <label class="form-label-admin">Machine Description *</label>
+          <textarea id="prodDescription" class="form-input-admin" rows="4" placeholder="Detail specifications, components, advantages, and applications..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-admin-primary" style="width:100%; padding:14px; justify-content:center;">
+          Save Machine &amp; Publish Changes &rarr;
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: ADD / EDIT BLOG -->
+  <div class="admin-modal-overlay" id="blogModal">
+    <div class="admin-modal-dialog">
+      <div class="admin-modal-header">
+        <h3 class="admin-modal-title" id="blogModalTitle">Write / Edit Blog Article</h3>
+        <button class="admin-modal-close" id="closeBlogModal">&times;</button>
+      </div>
+      <form id="blogForm">
+        <div class="form-group-admin">
+          <label class="form-label-admin">Article Title *</label>
+          <input type="text" id="blogTitle" class="form-input-admin" placeholder="e.g. How to Start a Lucrative Water Station..." required>
+        </div>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div class="form-group-admin">
+            <label class="form-label-admin">Category *</label>
+            <input type="text" id="blogCategory" class="form-input-admin" placeholder="e.g. Water Purification" required>
+          </div>
+          <div class="form-group-admin">
+            <label class="form-label-admin">Author *</label>
+            <input type="text" id="blogAuthor" class="form-input-admin" placeholder="e.g. Eng. John Maina" required>
+          </div>
+        </div>
+
+        <div class="form-group-admin">
+          <label class="form-label-admin">Cover Image</label>
+          <input type="text" id="blogImageUrl" class="form-input-admin" placeholder="assets/industries/... or https://...">
+          <div class="image-upload-preview-box">
+            <img src="assets/industries/commercial.jpg" id="blogImgPreview" class="preview-img-tag" alt="Preview">
+            <div>
+              <label class="btn-admin-secondary" style="padding:6px 14px; font-size:0.75rem; cursor:pointer;">
+                <span>Choose Cover Image</span>
+                <input type="file" id="blogImgFile" accept="image/*" style="display:none;">
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group-admin">
+          <label class="form-label-admin">Short Excerpt (Summary) *</label>
+          <textarea id="blogExcerpt" class="form-input-admin" rows="2" placeholder="Brief 1-2 sentence overview for the blog cards..." required></textarea>
+        </div>
+
+        <div class="form-group-admin">
+          <label class="form-label-admin">Full Article Content (Markdown or Paragraphs) *</label>
+          <textarea id="blogContent" class="form-input-admin" rows="8" placeholder="Write your full guide or article here..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-admin-primary" style="width:100%; padding:14px; justify-content:center;">
+          Publish Blog Article &rarr;
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="admin-toast" id="adminToast">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span id="adminToastMsg">Success</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/products-data.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
