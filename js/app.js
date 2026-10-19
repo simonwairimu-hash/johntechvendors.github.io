@@ -213,6 +213,9 @@ function initProductCatalog() {
 
   let activeCategory = 'all';
 
+  const allPill = document.querySelector('.filter-pill[data-filter="all"]');
+  if (allPill) allPill.textContent = `All Products (${productsList.length})`;
+
   function applyFilters() {
     const searchTerm = (searchInput ? searchInput.value : '').toLowerCase().trim();
 
@@ -283,6 +286,9 @@ function initProductCatalog() {
         : '';
 
       const priceDisplay = p.priceFormatted || ('KSh ' + (p.price ? p.price.toLocaleString() : 'Negotiable'));
+      const oldPriceDisplay = p.oldPrice 
+        ? `<span class="product-old-price" style="text-decoration:line-through; color:#94A3B8; font-size:0.8rem; margin-left:6px; font-weight:500;">${typeof p.oldPrice === 'number' ? 'KSh ' + p.oldPrice.toLocaleString() : p.oldPrice}</span>` 
+        : '';
 
       return `
         <div class="product-card" data-category="${p.categorySlug}">
@@ -297,7 +303,10 @@ function initProductCatalog() {
             <div class="product-footer">
               <div class="product-price-wrapper">
                 <span class="price-label">Official Price</span>
-                <span class="product-price">${priceDisplay}</span>
+                <div style="display:flex; align-items:baseline; gap:4px; flex-wrap:wrap;">
+                  <span class="product-price">${priceDisplay}</span>
+                  ${oldPriceDisplay}
+                </div>
               </div>
               <div class="product-actions">
                 <button class="btn-icon-quote" title="Quick View Specs" onclick="openQuickView('${p.id}')">
@@ -671,18 +680,28 @@ window.openQuickView = function(productId) {
   const modal = document.getElementById('quickViewModal');
   const body = document.getElementById('quickViewBody');
 
-  const specsList = Object.entries(product.specs || {}).map(([key, val]) => {
-    return `<li style="display:flex; justify-content:space-between; padding: 7px 0; border-bottom: 1px solid #EEF2F6; font-size: 0.875rem;">
-      <span style="font-weight:700; text-transform:capitalize; color:#0A1C38;">${key}</span>
-      <span style="color:#526077; font-weight:500;">${val}</span>
-    </li>`;
-  }).join('');
+  const specsList = Array.isArray(product.specs)
+    ? product.specs.map(item => `
+        <li style="display:flex; justify-content:space-between; padding: 7px 0; border-bottom: 1px solid #EEF2F6; font-size: 0.875rem;">
+          <span style="font-weight:700; color:#0A1C38;">Feature</span>
+          <span style="color:#526077; font-weight:500;">${item}</span>
+        </li>
+      `).join('')
+    : Object.entries(product.specs || {}).map(([key, val]) => `
+        <li style="display:flex; justify-content:space-between; padding: 7px 0; border-bottom: 1px solid #EEF2F6; font-size: 0.875rem;">
+          <span style="font-weight:700; text-transform:capitalize; color:#0A1C38;">${key}</span>
+          <span style="color:#526077; font-weight:500;">${val}</span>
+        </li>
+      `).join('');
 
   const settings = (window.DataStore && window.DataStore.getSettings) 
     ? window.DataStore.getSettings() 
     : (window.SITE_SETTINGS || {});
   const waNumber = settings.whatsapp || '254790825018';
   const priceDisplay = product.priceFormatted || ('KSh ' + product.price.toLocaleString());
+  const oldPriceHtml = product.oldPrice 
+    ? `<span style="text-decoration:line-through; color:#94A3B8; font-size:1.05rem; font-weight:500;">${typeof product.oldPrice === 'number' ? 'KSh ' + product.oldPrice.toLocaleString() : product.oldPrice}</span>` 
+    : '';
 
   body.innerHTML = `
     <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center;">
@@ -692,7 +711,10 @@ window.openQuickView = function(productId) {
       <div>
         <span style="color:#E51B24; font-size:0.75rem; font-weight:800; text-transform:uppercase; letter-spacing:0.05em;">${product.category}</span>
         <h2 style="font-size:1.375rem; font-weight:800; color:#0A1C38; margin: 4px 0 8px;">${product.name}</h2>
-        <p style="font-size:1.5rem; font-weight:800; color:#E51B24; margin-bottom:12px;">${priceDisplay}</p>
+        <div style="display:flex; align-items:baseline; gap:8px; margin-bottom:12px; flex-wrap:wrap;">
+          <p style="font-size:1.5rem; font-weight:800; color:#E51B24; margin:0;">${priceDisplay}</p>
+          ${oldPriceHtml}
+        </div>
         <p style="font-size:0.875rem; color:#526077; line-height:1.6; margin-bottom:16px;">${product.description}</p>
         
         ${specsList ? `<ul style="list-style:none; margin-bottom: 20px;">${specsList}</ul>` : ''}

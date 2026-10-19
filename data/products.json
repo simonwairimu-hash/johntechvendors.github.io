@@ -1,24 +1,24 @@
 [
   {
     "id": "prod_oil_20l",
-    "name": "Cooking Oil ATM (Salad ATM) 20 Liters",
+    "name": "Salad ATM (Cooking Oil Dispenser)",
     "category": "Oil ATM",
     "categorySlug": "oil-atm",
     "solutionType": "Vending & Dispensing",
-    "price": 30000,
+    "price": 29000,
     "badge": "Top Seller",
     "featured": true,
-    "description": "High-precision automated vegetable cooking oil dispenser tailored for retail shops and mini-supermarkets. Features digital volume calibration from as low as KSh 10, temperature-regulated heating to prevent oil solidification during cold weather, password-protected sales tracking, and food-grade stainless steel piping.",
-    "imageUrl": "assets/products/oil-atm-20l.jpg",
-    "fallbackUrl": "https://whatsapp1.johntechvendorsltd.co.ke/uploads/ad_1774621674495_e488901859c355de3eb9694f2d4b6f8c_0.jpeg",
+    "description": "Smart cooking oil dispenser starting from 20 litres. Perfect for retail kiosks and supermarkets to dispense salad oil by monetary value.",
+    "imageUrl": "assets/catalogue/3c8fd046-c22f-4671-ba8d-edf8e432f049-removebg-preview (1).png",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/3c8fd046-c22f-4671-ba8d-edf8e432f049-removebg-preview%20(1).png",
     "specs": {
-      "Capacity": "20 Liters",
-      "Dispensing": "From KSh 10",
-      "Material": "AISI 304 Stainless Steel",
-      "Control": "Digital PLC + Keypad",
-      "Heater": "Automated Thermostat"
+      "Capacity": "From 20 Litres",
+      "Pump": "Oil-Specific Pump",
+      "Dispensing": "Monetary Dispensing",
+      "Footprint": "Compact Footprint"
     },
-    "priceFormatted": "KSh 30,000"
+    "priceFormatted": "From KSh 29,000",
+    "oldPrice": null
   },
   {
     "id": "prod_oil_50l",
@@ -42,7 +42,7 @@
   },
   {
     "id": "prod_ro_250lph",
-    "name": "Commercial Reverse Osmosis Machine 250 LPH",
+    "name": "Reverse Osmosis Machine (250lph) 2 in 1 Set Up",
     "category": "Reverse Osmosis",
     "categorySlug": "reverse-osmosis",
     "solutionType": "Commercial Purification",
@@ -50,23 +50,24 @@
       "Borehole / High TDS",
       "Tap Water / Municipal"
     ],
-    "price": 310000,
+    "price": 298000,
     "badge": "Compact RO",
     "featured": false,
-    "description": "Compact commercial Reverse Osmosis system generating 250 liters of ultra-pure drinking water per hour. Eliminates up to 99.8% of dissolved minerals, salts, fluoride, and microbial contaminants. Ideal for restaurants, medium clinics, water kiosks, and corporate offices.",
-    "imageUrl": "https://whatsapp1.johntechvendorsltd.co.ke/uploads/ad_1774618193966_IMG-20260313-WA0002.jpg",
-    "fallbackUrl": "assets/products/ro-500lph.jpg",
+    "description": "250 LPH 2-in-1 reverse osmosis system tailored for small to mid-sized commercial water refilling shops treating borehole water.",
+    "imageUrl": "assets/catalogue/6f5dbaa8-9af5-4ead-8dff-bd9de8d6eef3.jpg",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/6f5dbaa8-9af5-4ead-8dff-bd9de8d6eef3.jpg",
     "specs": {
-      "Flow Rate": "250 Liters/Hour",
-      "Feed Water": "Tap or Low-TDS Borehole",
-      "Membranes": "High Rejection RO Membranes",
-      "Frame": "Stainless Steel Skid"
+      "Flow Rate": "250 LPH Flow Rate",
+      "Configuration": "2-in-1 Configuration",
+      "Application": "Borehole Specialist",
+      "Investment": "Cost-Effective Start"
     },
-    "priceFormatted": "KSh 310,000"
+    "priceFormatted": "KSh 298,000",
+    "oldPrice": "KSh 330,000"
   },
   {
     "id": "prod_ro_500lph",
-    "name": "Commercial Reverse Osmosis Machine 500 LPH",
+    "name": "Reverse Osmosis Machine (500LPH) 2IN1 Set Up",
     "category": "Reverse Osmosis",
     "categorySlug": "reverse-osmosis",
     "solutionType": "Commercial Purification",
@@ -77,20 +78,21 @@
     "price": 410000,
     "badge": "Most Popular",
     "featured": true,
-    "description": "The gold standard for commercial water refilling stations in Kenya. Produces 500 liters/hour of crystal-clean drinking water. Comes equipped with dual pressure gauges, stainless steel multi-stage pump, sediment and activated carbon pre-filtration columns, and automated flush cycles.",
-    "imageUrl": "assets/products/ro-500lph.jpg",
-    "fallbackUrl": "https://whatsapp1.johntechvendorsltd.co.ke/uploads/ad_1774618107648_IMG-20260324-WA0017.jpg",
+    "description": "Commercial 2-in-1 reverse osmosis setup delivering 500 LPH. Perfect for purifying salty borehole water and high-hardness water sources.",
+    "imageUrl": "assets/catalogue/0cc00287-ecf0-43f4-922e-c3ab0a151c97.jpg",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/0cc00287-ecf0-43f4-922e-c3ab0a151c97.jpg",
     "specs": {
-      "Flow Rate": "500 Liters/Hour (12,000 L/Day)",
-      "Rejection Rate": ">99%",
-      "Pump": "Stainless Steel Vertical Multistage",
-      "Frame": "Powder-coated / SS Skid"
+      "Output": "500 LPH Output",
+      "Configuration": "2-in-1 Setup",
+      "Storage": "Stainless Tank & Stand",
+      "Water Source": "Borehole Water"
     },
-    "priceFormatted": "KSh 410,000"
+    "priceFormatted": "KSh 410,000",
+    "oldPrice": "KSh 430,000"
   },
   {
     "id": "prod_ro_500lph_stand",
-    "name": "Reverse Osmosis Machine 500 LPH (Stand Skid Model)",
+    "name": "Reverse Osmosis Machine (500LPH) 3IN1 Set Up",
     "category": "Reverse Osmosis",
     "categorySlug": "reverse-osmosis",
     "solutionType": "Commercial Purification",
@@ -98,22 +100,24 @@
       "Borehole / High TDS",
       "Tap Water / Municipal"
     ],
-    "price": 410000,
+    "price": 430000,
     "badge": "Station Model",
     "featured": false,
-    "description": "Robust standalone skid-mounted 500 LPH reverse osmosis purification unit. Ergonomically configured for easy technician maintenance, filter cartridge replacement, and integrated chemical dosing for hard borehole water.",
-    "imageUrl": "https://whatsapp1.johntechvendorsltd.co.ke/uploads/ad_1774755241223_IMG-20260323-WA0021.jpg",
-    "fallbackUrl": "assets/products/ro-500lph.jpg",
+    "description": "Turnkey 3-in-1 reverse osmosis plant with 500 LPH output, pre-treatment media columns, overhead holding tank, and bottle rinser station.",
+    "imageUrl": "assets/catalogue/b79c0dd7-8d85-4cef-b382-dc48e06e1643.jpg",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/b79c0dd7-8d85-4cef-b382-dc48e06e1643.jpg",
     "specs": {
-      "Flow Rate": "500 LPH",
-      "Mounting": "Free-Standing Ergonomic Skid",
-      "Pre-treatment": "Sand + Carbon Vessel Skid"
+      "Output": "500 LPH Output",
+      "Plant Type": "3-in-1 Complete Plant",
+      "Pre-treatment": "Pre-treatment Vessels",
+      "Rinser": "Overhead Tank & Rinser"
     },
-    "priceFormatted": "KSh 410,000"
+    "priceFormatted": "KSh 430,000",
+    "oldPrice": "KSh 480,000"
   },
   {
     "id": "prod_ro_750lph",
-    "name": "Commercial Reverse Osmosis Machine 750 LPH (Stand)",
+    "name": "Reverse Osmosis Machine (750lph) (Stand)",
     "category": "Reverse Osmosis",
     "categorySlug": "reverse-osmosis",
     "solutionType": "Commercial Purification",
@@ -121,22 +125,24 @@
       "Borehole / High TDS",
       "Water Softener / Fluoride"
     ],
-    "price": 550000,
+    "price": 510000,
     "badge": "High Output",
     "featured": false,
-    "description": "Industrial water treatment plant delivering 750 LPH. Perfect for medium water bottling operations, food processing facilities, schools, and hospitals requiring consistent pure water day and night.",
-    "imageUrl": "https://whatsapp1.johntechvendorsltd.co.ke/uploads/ad_1774622200282_FB_IMG_1752767177470.jpg",
-    "fallbackUrl": "assets/products/ro-500lph.jpg",
+    "description": "Industrial-grade 750 litres per hour reverse osmosis system mounted on a heavy-duty stainless frame for purifying borehole water.",
+    "imageUrl": "assets/catalogue/1bf55650-b15e-4cd3-97be-14389b8f556e.jpg",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/1bf55650-b15e-4cd3-97be-14389b8f556e.jpg",
     "specs": {
-      "Flow Rate": "750 Liters/Hour",
-      "Recovery Rate": "50% - 75%",
-      "Controls": "Digital TDS & Flow Display"
+      "Flow Rate": "750 LPH Flow Rate",
+      "Frame": "Rigid Stand Skid",
+      "Pump": "High Pressure Booster",
+      "Control": "Full Instrumentation"
     },
-    "priceFormatted": "KSh 550,000"
+    "priceFormatted": "KSh 510,000",
+    "oldPrice": "KSh 530,000"
   },
   {
     "id": "prod_ro_1000lph",
-    "name": "Industrial Reverse Osmosis Machine 1,000 LPH (Stand)",
+    "name": "Reverse Osmosis Machine (1000LPH) Stand",
     "category": "Reverse Osmosis",
     "categorySlug": "reverse-osmosis",
     "solutionType": "Commercial Purification",
@@ -144,18 +150,20 @@
       "Borehole / High TDS",
       "Water Softener / Fluoride"
     ],
-    "price": 700000,
+    "price": 630000,
     "badge": "Industrial Heavy Duty",
     "featured": false,
-    "description": "Heavy-duty 1,000 LPH industrial Reverse Osmosis plant. Capable of treating complex borehole water with high salinity and conductivity. Full automated PLC panel with conductivity meter, pressure switches, and auto-backwash.",
-    "imageUrl": "https://whatsapp1.johntechvendorsltd.co.ke/uploads/ad_1774622117976_FB_IMG_1726170463631.jpg",
-    "fallbackUrl": "assets/products/ro-500lph.jpg",
+    "description": "High-output 1,000 litres per hour commercial reverse osmosis plant mounted on a robust stainless stand for purifying borehole and hard water.",
+    "imageUrl": "assets/catalogue/ef93bfeb-097d-4b64-b82e-31e60bbe1194.jpg",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/ef93bfeb-097d-4b64-b82e-31e60bbe1194.jpg",
     "specs": {
-      "Flow Rate": "1,000 Liters/Hour (24,000 L/Day)",
-      "Membrane Housing": "FRP / Stainless 304",
-      "Automation": "Fully Automated Micro-controller"
+      "Flow Rate": "1,000 LPH Capacity",
+      "Frame": "Stainless Steel Frame",
+      "Water Type": "Borehole / Hard Water",
+      "Rejection": "High TDS Rejection"
     },
-    "priceFormatted": "KSh 700,000"
+    "priceFormatted": "KSh 630,000",
+    "oldPrice": "KSh 650,000"
   },
   {
     "id": "prod_ro_1500lph",
@@ -204,7 +212,7 @@
   },
   {
     "id": "prod_ultra_filtration",
-    "name": "Commercial Ultra Filtration Machine",
+    "name": "Ultrafiltration 3-in-1 Setup",
     "category": "Ultra Filtration",
     "categorySlug": "ultra-filtration",
     "solutionType": "Commercial Purification",
@@ -215,15 +223,17 @@
     "price": 210000,
     "badge": "Pure Water Tech",
     "featured": true,
-    "description": "Advanced hollow-fiber membrane ultrafiltration machine. Delivers crystal clear drinking water by retaining beneficial minerals while removing 99.99% of bacteria, cysts, turbidity, and suspended solids without generating wastewater.",
-    "imageUrl": "assets/products/ultra-filtration.jpg",
-    "fallbackUrl": "https://whatsapp1.johntechvendorsltd.co.ke/uploads/ad_1774617389520_IMG-20260326-WA0002.jpg",
+    "description": "Complete 3-in-1 ultrafiltration package featuring purification skid, overhead stainless steel tank, and bottle rinser sink.",
+    "imageUrl": "assets/catalogue/ec09f20c-6a97-4fe9-a2ee-daffb6e0100c-removebg-preview (1).png",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/ec09f20c-6a97-4fe9-a2ee-daffb6e0100c-removebg-preview%20(1).png",
     "specs": {
-      "Technology": "Hollow Fiber 0.01 Micron",
-      "Recovery": "95%+ Zero Waste",
-      "Mineral Retention": "Preserves Natural Electrolytes"
+      "Package": "3-in-1 Package",
+      "Setup": "Turnkey Setup",
+      "Plumbing": "Complete Plumbing",
+      "Tier": "Commercial Ready"
     },
-    "priceFormatted": "KSh 210,000"
+    "priceFormatted": "KSh 210,000",
+    "oldPrice": "KSh 230,000"
   },
   {
     "id": "prod_water_cabinet",
@@ -246,41 +256,45 @@
   },
   {
     "id": "prod_water_1tap_auto_cab",
-    "name": "One Tap Automatic Water Vending Machine (Cabinet)",
+    "name": "One Tap Automatic Water Vending Machine (Cabinet Design)",
     "category": "Water Vending Machine",
     "categorySlug": "water-vending",
     "solutionType": "Vending & Dispensing",
-    "price": 105000,
+    "price": 75000,
     "badge": "Automated Kiosk",
     "featured": false,
-    "description": "Enclosed single-tap automated water ATM with digital control panel, accurate coin acceptance, and automated container rinsing faucet. Ideal for high-traffic street corners, estate shops, and water stations.",
-    "imageUrl": "https://whatsapp1.johntechvendorsltd.co.ke/uploads/ad_1774621963544_IMG_20250927_143244.jpg",
-    "fallbackUrl": "assets/products/water-atm-cabinet.jpg",
+    "description": "Upright cabinet design with automated digital control and keypad for refilling already purified water accurately.",
+    "imageUrl": "assets/catalogue/7fbfe3e3-f5f8-4d5c-8de4-17b56f00a0ad-removebg-preview (1).png",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/7fbfe3e3-f5f8-4d5c-8de4-17b56f00a0ad-removebg-preview%20(1).png",
     "specs": {
-      "Taps": "1 Automatic Dispenser",
-      "Flow Accuracy": "±1%",
-      "Payment": "Coin & Digital Token"
+      "Dispensing": "1 Automatic Tap",
+      "Design": "Cabinet Design",
+      "Control": "Digital Keypad",
+      "Chamber": "Enclosed Filling Chamber"
     },
-    "priceFormatted": "KSh 105,000"
+    "priceFormatted": "KSh 75,000",
+    "oldPrice": "KSh 90,000"
   },
   {
     "id": "prod_water_1tap_auto_table",
-    "name": "One Tap Automatic Water Vending Machine (Tabletop)",
+    "name": "One Tap Automatic Water Vending Machine (Table Design)",
     "category": "Water Vending Machine",
     "categorySlug": "water-vending",
     "solutionType": "Vending & Dispensing",
-    "price": 105000,
+    "price": 75000,
     "badge": "Compact Countertop",
     "featured": false,
-    "description": "Compact tabletop automated water vending machine designed to sit directly on shop counters and dispensing bars. Takes up minimal retail footprint while providing full automated digital coin sales.",
-    "imageUrl": "https://whatsapp1.johntechvendorsltd.co.ke/uploads/ad_1774622117976_FB_IMG_1726170463631.jpg",
-    "fallbackUrl": "assets/products/water-atm-cabinet.jpg",
+    "description": "Compact table design with swan-neck tap and digital keypad for automated dispensing of purified drinking water.",
+    "imageUrl": "assets/catalogue/e219229c-c54e-4d1d-a058-f05efc551118-removebg-preview (1).png",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/e219229c-c54e-4d1d-a058-f05efc551118-removebg-preview%20(1).png",
     "specs": {
-      "Design": "Space-Saving Countertop Tabletop",
       "Taps": "1 Automatic Tap",
-      "Audit": "Daily Digital Sales Counter"
+      "Design": "Tabletop Setup",
+      "Control": "Digital PLC Keypad",
+      "Basin": "Stainless Basin"
     },
-    "priceFormatted": "KSh 105,000"
+    "priceFormatted": "KSh 75,000",
+    "oldPrice": "KSh 80,000"
   },
   {
     "id": "prod_water_2tap_manual",
@@ -320,41 +334,45 @@
   },
   {
     "id": "prod_water_1tap_manual_table",
-    "name": "One Tap Manual Water Vending Machine (Tabletop)",
+    "name": "One Tap Manual Water Vending Machine (Table Design)",
     "category": "Water Vending Machine",
     "categorySlug": "water-vending",
     "solutionType": "Vending & Dispensing",
-    "price": 80000,
+    "price": 65000,
     "badge": "Budget Friendly",
     "featured": false,
-    "description": "Economical single-tap manual countertop water refilling unit. Low capital investment for retail shop owners starting out in water distribution.",
-    "imageUrl": "https://whatsapp1.johntechvendorsltd.co.ke/uploads/ad_1774622295097_IMG20230706174734.jpg",
-    "fallbackUrl": "assets/products/water-atm-cabinet.jpg",
+    "description": "Table design water vending machine for refilling already purified water. Compact and ideal for shops, kiosks, and retail refill stations.",
+    "imageUrl": "assets/catalogue/da0fd7d7-3665-4a78-97f3-941838ef557b-removebg-preview (1).png",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/da0fd7d7-3665-4a78-97f3-941838ef557b-removebg-preview%20(1).png",
     "specs": {
+      "Dispensing": "1 Manual Tap",
       "Design": "Tabletop Compact",
-      "Operation": "Manual Food-Grade Lever"
+      "Footprint": "Compact Footprint",
+      "Basin": "Stainless Basin"
     },
-    "priceFormatted": "KSh 80,000"
+    "priceFormatted": "KSh 65,000",
+    "oldPrice": "KSh 70,000"
   },
   {
     "id": "prod_milk_50l",
-    "name": "Smart Milk ATM 50 Liters",
+    "name": "Milk ATM (Capacity From 50Ltrs)",
     "category": "Milk ATM",
     "categorySlug": "milk-atm",
     "solutionType": "Milk Processing",
     "price": 65000,
     "badge": "Shop Starter",
     "featured": false,
-    "description": "Hygienic refrigerated milk ATM featuring an insulated AISI 304 food-grade stainless steel milk tank. Dispenses exact amounts from KSh 10 upwards, keeping milk chilled below 4°C to prevent spoilage.",
-    "imageUrl": "assets/products/milk-atm-100l.jpg",
-    "fallbackUrl": "https://whatsapp1.johntechvendorsltd.co.ke/uploads/ad_1774621378838_FB_IMG_1738083302772.jpg",
+    "description": "Automated commercial milk vending machine with food-grade sanitary pump, precise digital calibration, and cooling preservation from 50L capacity.",
+    "imageUrl": "assets/catalogue/939eaab0-9fb3-49e1-b8e6-ff36a7c82885-removebg-preview (1).png",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/939eaab0-9fb3-49e1-b8e6-ff36a7c82885-removebg-preview%20(1).png",
     "specs": {
-      "Capacity": "50 Liters",
-      "Cooling": "Integrated Refrigeration Unit",
-      "Pump": "Food-grade Peristaltic / Impeller",
-      "Tank": "AISI 304 Stainless"
+      "Capacity": "From 50 Litres",
+      "Material": "Food-Grade Stainless",
+      "Metering": "Accurate Digital Metering",
+      "Security": "Password Protected"
     },
-    "priceFormatted": "KSh 65,000"
+    "priceFormatted": "From KSh 65,000",
+    "oldPrice": null
   },
   {
     "id": "prod_milk_100l",
@@ -416,23 +434,24 @@
   },
   {
     "id": "prod_pasteurizer_100l",
-    "name": "Batch Milk Pasteurizer 100 Liters",
+    "name": "Milk Pasteurizer (From 100 Liters Capacity)",
     "category": "Milk Pasteurizer",
     "categorySlug": "milk-pasteurizer",
     "solutionType": "Milk Processing",
-    "price": 180000,
+    "price": 150000,
     "badge": "Dairy Standard",
     "featured": false,
-    "description": "Double-jacketed 100L batch milk pasteurizer. Features electric heating elements, geared sanitary motor agitator, digital temperature controller, and dual cold water circulation cooling jacket. Complies with Kenya Dairy Board regulations.",
-    "imageUrl": "assets/products/milk-pasteurizer-100l.jpg",
-    "fallbackUrl": "https://whatsapp1.johntechvendorsltd.co.ke/uploads/ad_1774624849603_IMG-20260223-WA0003.jpg",
+    "description": "Batch milk pasteurizer with stainless steel heating elements, digital temperature controller, and electric motor agitator from 100L.",
+    "imageUrl": "assets/catalogue/d6cb3b3d-1751-4fdf-aaa6-e8903911277a.jpg",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/d6cb3b3d-1751-4fdf-aaa6-e8903911277a.jpg",
     "specs": {
-      "Capacity": "100 Liters",
-      "Heating": "Electric Elements (6 kW / 9 kW)",
-      "Agitator": "Motor-driven SS Blade",
-      "Standards": "KEBS & KDB Food Grade"
+      "Capacity": "From 100 Litres",
+      "Heating": "Electric Heating",
+      "Controller": "Digital Temp Controller",
+      "Valve": "Sanitary Drain Valve"
     },
-    "priceFormatted": "KSh 180,000"
+    "priceFormatted": "From KSh 150,000",
+    "oldPrice": null
   },
   {
     "id": "prod_pasteurizer_150l",
@@ -546,5 +565,235 @@
       "Dimensions": "Customizable Length"
     },
     "priceFormatted": "KSh 16,000"
+  },
+  {
+    "id": "prod_water_2tap_auto",
+    "name": "Two Taps (Automatic) Water Vending Machine",
+    "category": "Water Vending Machine",
+    "categorySlug": "water-vending",
+    "solutionType": "Vending & Dispensing",
+    "price": 110000,
+    "priceFormatted": "KSh 110,000",
+    "oldPrice": "KSh 125,000",
+    "badge": "Dual Tap Auto",
+    "featured": false,
+    "description": "Dual-tap automatic water vending machine with twin digital micro-controllers for refilling already purified water at higher customer traffic.",
+    "imageUrl": "assets/catalogue/771ebeb8-5452-4307-8928-385d8d8321e6-removebg-preview (1).png",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/771ebeb8-5452-4307-8928-385d8d8321e6-removebg-preview%20(1).png",
+    "specs": {
+      "Taps": "2 Automatic Taps",
+      "Control": "Twin Digital Controllers",
+      "Housing": "Stainless Steel Enclosure",
+      "Flow": "Fast Dispensing"
+    }
+  },
+  {
+    "id": "prod_water_refill_300l_2tap",
+    "name": "Water Refilling with a 300Ltrs Holding Tank (Automatic 2 Taps)",
+    "category": "Water Vending Machine",
+    "categorySlug": "water-vending",
+    "solutionType": "Vending & Dispensing",
+    "price": 125000,
+    "priceFormatted": "KSh 125,000",
+    "oldPrice": "KSh 130,000",
+    "badge": "300L Tank Included",
+    "featured": false,
+    "description": "Water refilling station equipped with a 300-litre stainless steel overhead holding tank and 2 automatic taps for already purified water.",
+    "imageUrl": "assets/catalogue/986a5a9a-4f11-4108-a111-391d6ac48711-removebg-preview (1).png",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/986a5a9a-4f11-4108-a111-391d6ac48711-removebg-preview%20(1).png",
+    "specs": {
+      "Storage": "300L Holding Tank",
+      "Taps": "2 Automatic Taps",
+      "Flow": "Gravity / Pump Flow",
+      "Material": "Food-Grade Stainless"
+    }
+  },
+  {
+    "id": "prod_water_2tap_auto_rinser",
+    "name": "Two Taps (Automatic) Water Vending Machine with Rinser",
+    "category": "Water Vending Machine",
+    "categorySlug": "water-vending",
+    "solutionType": "Vending & Dispensing",
+    "price": 105000,
+    "priceFormatted": "KSh 105,000",
+    "oldPrice": "KSh 115,000",
+    "badge": "With Rinser Sink",
+    "featured": false,
+    "description": "Two taps automatic water vending setup featuring an integrated side bottle rinser sink for refilling already purified water hygienically.",
+    "imageUrl": "assets/catalogue/f441795e-d390-4504-b780-b2d114c2f052-removebg-preview (1).png",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/f441795e-d390-4504-b780-b2d114c2f052-removebg-preview%20(1).png",
+    "specs": {
+      "Taps": "2 Automatic Taps",
+      "Rinser": "Bottle Rinser Sink",
+      "Metering": "Digital Price/Volume Metering",
+      "Hygiene": "Hygiene Ready"
+    }
+  },
+  {
+    "id": "prod_water_500l_tank_manual",
+    "name": "Water Vending Machine with 500 Liters Holding Tank (Manual)",
+    "category": "Water Vending Machine",
+    "categorySlug": "water-vending",
+    "solutionType": "Vending & Dispensing",
+    "price": 130000,
+    "priceFormatted": "KSh 130,000",
+    "oldPrice": "KSh 140,000",
+    "badge": "500L Tank Included",
+    "featured": false,
+    "description": "Heavy-duty manual water vending station fitted with a 500-litre stainless storage tank and bottle washing station for high-capacity refilling.",
+    "imageUrl": "assets/catalogue/bd4f1436-407e-4b8c-bf92-258c51eeee7d-removebg-preview (1).png",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/bd4f1436-407e-4b8c-bf92-258c51eeee7d-removebg-preview%20(1).png",
+    "specs": {
+      "Storage": "500L Storage Tank",
+      "Taps": "Manual Dispensing Taps",
+      "Rinser": "Bottle Rinser Attached",
+      "Grade": "Commercial Grade"
+    }
+  },
+  {
+    "id": "prod_uf_1000lph_standalone",
+    "name": "Ultrafiltration Machine 1000 Liters Per Hour (Stand Alone)",
+    "category": "Ultra Filtration",
+    "categorySlug": "ultra-filtration",
+    "solutionType": "Commercial Purification",
+    "purificationTags": [
+      "Tap Water / Municipal",
+      "Ultrafiltration"
+    ],
+    "price": 200000,
+    "priceFormatted": "KSh 200,000",
+    "oldPrice": "KSh 210,000",
+    "badge": "1000 LPH Plant",
+    "featured": false,
+    "description": "High-capacity 1,000 LPH standalone ultrafiltration plant engineered for purifying municipal and tap water to crystal clarity.",
+    "imageUrl": "assets/catalogue/a5f39086-a438-4d79-bf8b-6600a63bd46c.jpg",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/a5f39086-a438-4d79-bf8b-6600a63bd46c.jpg",
+    "specs": {
+      "Capacity": "1,000 LPH Flow Rate",
+      "Mounting": "Standalone Skid",
+      "Feed Water": "Municipal / Tap Water",
+      "Stages": "Multi-stage Filtration"
+    }
+  },
+  {
+    "id": "prod_uf_500lph_standalone",
+    "name": "Ultrafiltration Machine 500 Liters Per Hour (Stand Alone)",
+    "category": "Ultra Filtration",
+    "categorySlug": "ultra-filtration",
+    "solutionType": "Commercial Purification",
+    "purificationTags": [
+      "Tap Water / Municipal",
+      "Ultrafiltration"
+    ],
+    "price": 170000,
+    "priceFormatted": "KSh 170,000",
+    "oldPrice": "KSh 185,000",
+    "badge": "500 LPH Plant",
+    "featured": false,
+    "description": "Efficient 500 LPH standalone ultrafiltration system. Retains beneficial natural minerals while removing all bacteria, turbidity, and suspended solids.",
+    "imageUrl": "assets/catalogue/694997a3-8c71-4df0-ae2e-a7c9d784d110.jpg",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/694997a3-8c71-4df0-ae2e-a7c9d784d110.jpg",
+    "specs": {
+      "Capacity": "500 LPH Capacity",
+      "Mounting": "Standalone Skid",
+      "Instrumentation": "Pressure Gauges",
+      "Metering": "Flow Meters"
+    }
+  },
+  {
+    "id": "prod_uf_without_tank",
+    "name": "Ultrafiltration Machine without Holding Tank",
+    "category": "Ultra Filtration",
+    "categorySlug": "ultra-filtration",
+    "solutionType": "Commercial Purification",
+    "purificationTags": [
+      "Tap Water / Municipal",
+      "Ultrafiltration"
+    ],
+    "price": 170000,
+    "priceFormatted": "KSh 170,000",
+    "oldPrice": "KSh 190,000",
+    "badge": "Direct Flow UF",
+    "featured": false,
+    "description": "Ultrafiltration machine without overhead tank, designed for purifying municipal water / Maji ya kanjo. Includes bottle rinser sink.",
+    "imageUrl": "assets/catalogue/3818f4fa-fe31-4cae-8dd2-95056f508dd0-removebg-preview (1).png",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/3818f4fa-fe31-4cae-8dd2-95056f508dd0-removebg-preview%20(1).png",
+    "specs": {
+      "Water Source": "Purifies Municipal Water",
+      "Flow Mode": "Direct Flow",
+      "Rinser": "Bottle Rinser Sink",
+      "Design": "Compact Design"
+    }
+  },
+  {
+    "id": "prod_uf_with_tank",
+    "name": "Ultrafiltration Machine (with Holding Tank)",
+    "category": "Ultra Filtration",
+    "categorySlug": "ultra-filtration",
+    "solutionType": "Commercial Purification",
+    "purificationTags": [
+      "Tap Water / Municipal",
+      "Ultrafiltration"
+    ],
+    "price": 198000,
+    "priceFormatted": "KSh 198,000",
+    "oldPrice": "KSh 210,000",
+    "badge": "With Storage Tank",
+    "featured": false,
+    "description": "Complete ultrafiltration system for municipal water and fresh water, equipped with overhead stainless storage tank and bottle rinser station.",
+    "imageUrl": "assets/catalogue/44850816-4afc-4817-a8e2-1414424bed03-removebg-preview (1).png",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/44850816-4afc-4817-a8e2-1414424bed03-removebg-preview%20(1).png",
+    "specs": {
+      "Water Source": "Fresh / Municipal Water",
+      "Storage": "Integrated Tank",
+      "Rinser": "Bottle Rinser Sink",
+      "Format": "Turnkey Station"
+    }
+  },
+  {
+    "id": "prod_ro_3000lph",
+    "name": "Reverse Osmosis Machine (3000lph)",
+    "category": "Reverse Osmosis",
+    "categorySlug": "reverse-osmosis",
+    "solutionType": "Commercial Purification",
+    "purificationTags": [
+      "Borehole / High TDS",
+      "Water Softener / Fluoride"
+    ],
+    "price": 1500000,
+    "priceFormatted": "KSh 1,500,000",
+    "oldPrice": "KSh 1,700,000",
+    "badge": "Factory Tier Plant",
+    "featured": false,
+    "description": "Heavy industrial 3,000 litres per hour high-volume reverse osmosis water treatment system for packaging plants, factories, and institutions.",
+    "imageUrl": "assets/catalogue/45d3df9d-9feb-47fb-b07c-a315d0110648.jpg",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/45d3df9d-9feb-47fb-b07c-a315d0110648.jpg",
+    "specs": {
+      "Capacity": "3,000 LPH Industrial",
+      "Membranes": "Multi-Membrane Array",
+      "Pump": "Heavy-Duty Vertical Pump",
+      "Operation": "Continuous Duty"
+    }
+  },
+  {
+    "id": "prod_milk_chiller_100l",
+    "name": "Milk Chiller (From 100 Liters Capacity)",
+    "category": "Milk Chillers",
+    "categorySlug": "milk-chillers",
+    "solutionType": "Milk Processing",
+    "price": 250000,
+    "priceFormatted": "From KSh 250,000",
+    "oldPrice": null,
+    "badge": "Commercial Chiller",
+    "featured": false,
+    "description": "Rapid cooling commercial milk chiller starting from 100L capacity with condensing cooling unit and internal food-grade agitator.",
+    "imageUrl": "assets/catalogue/ae457c6c-d21e-455f-8277-af890d1ee3fe.jpg",
+    "fallbackUrl": "https://simonwairimu-hash.github.io/JOHNTECH-VENDORS-PRODUCTS-CATALOGUE/images/ae457c6c-d21e-455f-8277-af890d1ee3fe.jpg",
+    "specs": {
+      "Capacity": "From 100 Litres",
+      "Cooling": "Rapid Cooling",
+      "Agitator": "Stainless Agitator",
+      "Condenser": "Condenser Unit Attached"
+    }
   }
 ]
